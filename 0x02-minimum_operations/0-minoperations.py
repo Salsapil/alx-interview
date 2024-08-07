@@ -16,3 +16,4 @@ def minOperations(n):
             n /= factor
         # Move to the next factor
         factor += 1
+    return operations

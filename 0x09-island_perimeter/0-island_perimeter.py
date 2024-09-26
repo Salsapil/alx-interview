@@ -13,15 +13,15 @@ def island_perimeter(grid):
                 # Check if there's land above
                 if i > 0 and grid[i - 1][j] == 1:
                     perimeter -= 1
-                
+
                 # Check if there's land below
                 if i < rows - 1 and grid[i + 1][j] == 1:
                     perimeter -= 1
-                
+
                 # Check if there's land to the left
                 if j > 0 and grid[i][j - 1] == 1:
                     perimeter -= 1
-                
+
                 # Check if there's land to the right
                 if j < cols - 1 and grid[i][j + 1] == 1:
                     perimeter -= 1
